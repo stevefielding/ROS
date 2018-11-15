@@ -1,0 +1,9 @@
+<launch>
+
+  <node pkg="my_turtlebot_actions" type="odomActionServer.py" name="odomActionServer1"  output="screen">
+  </node>
+  
+  <node pkg="my_turtlebot_actions" type="odomActionClient.py" name="odomActionClient1"  output="screen">
+  </node>
+
+</launch>

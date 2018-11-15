@@ -1,0 +1,8 @@
+# goal
+
+---
+# result
+nav_msgs/Odometry[] result_odom_array
+---
+# feedback
+nav_msgs/Odometry[] feedback_odom_array

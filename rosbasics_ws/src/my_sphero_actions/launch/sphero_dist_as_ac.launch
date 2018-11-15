@@ -1,0 +1,8 @@
+<launch>
+
+  <node pkg="my_sphero_actions" type="sphero_dist_as.py" name="spheroDist_as1"  output="screen">
+  </node>
+  <node pkg="my_sphero_actions" type="sphero_dist_ac.py" name="spheroDist_ac1"  output="screen">
+  </node>
+
+</launch>

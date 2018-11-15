@@ -1,0 +1,12 @@
+<launch>
+
+  <node pkg="my_sphero_main" type="sphero_dist_as.py" name="spheroDist_as1"  output="screen">
+  </node>
+  
+  <node pkg="my_sphero_main" type="crashDetectServer.py" name="crashServer1"  output="screen">
+  </node>
+
+  <node pkg="my_sphero_main" type="mazeEscape.py" name="mazeEscape1"  output="screen">
+  </node>
+
+</launch>

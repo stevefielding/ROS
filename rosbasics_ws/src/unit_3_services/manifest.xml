@@ -1,0 +1,16 @@
+<package>
+  <description brief="unit_3_services">
+
+     unit_3_services
+
+  </description>
+  <author>user</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/unit_3_services</url>
+  <depend package="rospy"/>
+  <depend package="iri_wam_reproduce_trajectory"/>
+
+</package>
+
+

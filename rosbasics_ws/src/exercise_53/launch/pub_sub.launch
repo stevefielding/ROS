@@ -1,0 +1,8 @@
+<launch>
+
+  <node pkg="exercise_53" type="pub.py" name="Pub1"  output="screen">
+  </node>
+  <node pkg="exercise_53" type="sub.py" name="Sub1"  output="screen">
+  </node>
+  
+</launch>

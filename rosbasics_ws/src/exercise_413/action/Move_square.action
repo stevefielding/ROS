@@ -1,0 +1,8 @@
+#goal
+int32 sides
+---
+#result
+int32 nseconds
+---
+#feedback
+int32 currentside

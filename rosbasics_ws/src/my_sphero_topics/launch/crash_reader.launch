@@ -1,0 +1,6 @@
+<launch>
+
+  <node pkg="my_sphero_topics" type="crashReader.py" name="crashReader1"  output="screen">
+  </node>
+
+</launch>

@@ -1,0 +1,6 @@
+<launch>
+
+  <node pkg="my_sphero_topics" type="topic_reader.py" name="TopicReader1"  output="screen">
+  </node>
+
+</launch>

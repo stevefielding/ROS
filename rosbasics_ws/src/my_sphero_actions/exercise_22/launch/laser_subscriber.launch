@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="exercise_22" type="laser_subscriber.py" name="Laser"  output="screen">
+  </node>
+</launch>

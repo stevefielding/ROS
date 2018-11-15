@@ -1,0 +1,6 @@
+<launch>
+
+  <node pkg="exercise_32" type="bb8_move_in_square_service_server.py" name="Move1"  output="screen">
+  </node>
+  
+</launch>
