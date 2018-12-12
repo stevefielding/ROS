@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="spot_name" default="random_spot" />
+
+  <node pkg="spot_recorder" type="spots_to_file.py" name="spots_to_file1" output="screen">
+    <param name="use_spot_name" value="$(arg spot_name)"/>
+  </node>
+
+</launch>

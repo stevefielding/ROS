@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Run the map server -->
+  <arg name="map_file" default="$(find husky_navigation)/maps/my_map.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+  
+  <arg name="use_map_topic" default="true"/>
+  <arg name="scan_topic" default="scan" />
+
+  <node pkg="amcl" type="amcl" name="amcl">
+    <param name="use_map_topic" value="$(arg use_map_topic)"/>
+    <rosparam file="$(find my_amcl_launcher)/params/my_amcl_params.yaml" command="load" />
+    <remap from="scan" to="$(arg scan_topic)"/>
+  </node>
+
+  #<!--- Run Move Base -->
+  #<include file="$(find husky_navigation)/launch/move_base.launch" />
+</launch>
+
+
+
+
+
+

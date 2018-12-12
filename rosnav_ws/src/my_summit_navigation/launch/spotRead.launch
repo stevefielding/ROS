@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="spot_name" default="random_spot" />
+
+  <node pkg="my_summit_navigation" type="get_coordinates_service_server.py" name="get_coordinates_service_server1" output="screen">
+    <param name="use_spot_name" value="$(arg spot_name)"/>
+  </node>
+
+</launch>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Run the map server, amcl, and move_base -->
+  <include file="$(find my_summit_path_planning)/launch/move_base.launch" /> 
+
+  <!-- Start a service server that takes spot name requests, reads pose info from a file, and sets a 
+  move_base target pose via send_coordinates_action_client -->
+  <node pkg="my_summit_navigation" type="get_coordinates_service_server.py" name="get_coordinates_service_server1" output="screen">
+
+  </node>
+
+</launch>

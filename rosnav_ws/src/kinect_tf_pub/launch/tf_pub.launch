@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="tf" type="static_transform_publisher" name="kinect_pub"
+    args="x y z yaw pitch roll base_link kinect_link period_in_ms">
+    </node>
+</launch>
